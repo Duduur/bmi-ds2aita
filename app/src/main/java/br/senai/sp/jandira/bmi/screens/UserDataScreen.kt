@@ -192,7 +192,7 @@ fun UserDataScreen(modifier: Modifier = Modifier) {
                             )
                         },
                         keyboardOptions = KeyboardOptions(
-                            keyboardType = KeyboardType.Email,
+                            keyboardType = KeyboardType.Number,
                             capitalization = KeyboardCapitalization.Words
                         )
 
@@ -215,7 +215,7 @@ fun UserDataScreen(modifier: Modifier = Modifier) {
                             )
                         },
                         keyboardOptions = KeyboardOptions(
-                            keyboardType = KeyboardType.Email,
+                            keyboardType = KeyboardType.Number,
                             capitalization = KeyboardCapitalization.Words
                         )
 
@@ -237,7 +237,7 @@ fun UserDataScreen(modifier: Modifier = Modifier) {
                             )
                         },
                         keyboardOptions = KeyboardOptions(
-                            keyboardType = KeyboardType.Email,
+                            keyboardType = KeyboardType.Number,
                             capitalization = KeyboardCapitalization.Words
                         )
                     )
