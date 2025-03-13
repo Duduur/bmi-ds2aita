@@ -191,6 +191,13 @@ fun UserDataScreen(modifier: Modifier = Modifier) {
 
                             )
                         },
+                        label = {
+                            Text(
+                                text = stringResource(
+                                    R.string.age
+                                )
+                            )
+                        },
                         keyboardOptions = KeyboardOptions(
                             keyboardType = KeyboardType.Number,
                             capitalization = KeyboardCapitalization.Words
@@ -212,6 +219,13 @@ fun UserDataScreen(modifier: Modifier = Modifier) {
                                 contentDescription = "",
                                 tint = Color(0xFF126083)
 
+                            )
+                        },
+                        label = {
+                            Text(
+                                text = stringResource(
+                                    R.string.Weight
+                                )
                             )
                         },
                         keyboardOptions = KeyboardOptions(
@@ -236,10 +250,19 @@ fun UserDataScreen(modifier: Modifier = Modifier) {
 
                             )
                         },
+                        
+                        label = {
+                            Text(
+                                text = stringResource(
+                                    R.string.Height
+                                )
+                            )
+                        },
                         keyboardOptions = KeyboardOptions(
                             keyboardType = KeyboardType.Number,
                             capitalization = KeyboardCapitalization.Words
                         )
+
                     )
                     Button(onClick = {},
                         colors = ButtonDefaults.buttonColors(Color(0xFF7B3DE0)),
