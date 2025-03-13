@@ -13,6 +13,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.AirlineStops
 import androidx.compose.material.icons.filled.AlignVerticalCenter
@@ -41,6 +42,8 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.input.KeyboardCapitalization
+import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -176,7 +179,9 @@ fun UserDataScreen(modifier: Modifier = Modifier) {
                     }
                     OutlinedTextField(
                         value =  ageState.value,
-                        onValueChange = {},
+                        onValueChange = { it ->
+                            ageState.value = it
+                        },
                         shape = RoundedCornerShape(30.dp),
                         leadingIcon = {
                             Icon(
@@ -186,11 +191,17 @@ fun UserDataScreen(modifier: Modifier = Modifier) {
 
                             )
                         },
+                        keyboardOptions = KeyboardOptions(
+                            keyboardType = KeyboardType.Email,
+                            capitalization = KeyboardCapitalization.Words
+                        )
 
                     )
                     OutlinedTextField(
                         value =  weightState.value,
-                        onValueChange = {},
+                        onValueChange = {it ->
+                            weightState.value = it
+                        },
 
                         modifier = Modifier
                             .padding(top = 32.dp),
@@ -203,11 +214,17 @@ fun UserDataScreen(modifier: Modifier = Modifier) {
 
                             )
                         },
+                        keyboardOptions = KeyboardOptions(
+                            keyboardType = KeyboardType.Email,
+                            capitalization = KeyboardCapitalization.Words
+                        )
 
                     )
                     OutlinedTextField(
                         value =  heightState.value,
-                        onValueChange = {},
+                        onValueChange = {it ->
+                            heightState.value = it
+                        },
                         modifier = Modifier
                             .padding(top = 32.dp),
                         shape = RoundedCornerShape(30.dp),
@@ -219,6 +236,10 @@ fun UserDataScreen(modifier: Modifier = Modifier) {
 
                             )
                         },
+                        keyboardOptions = KeyboardOptions(
+                            keyboardType = KeyboardType.Email,
+                            capitalization = KeyboardCapitalization.Words
+                        )
                     )
                     Button(onClick = {},
                         colors = ButtonDefaults.buttonColors(Color(0xFF7B3DE0)),
