@@ -210,7 +210,7 @@ fun BMIResultScreen(modifier: Modifier = Modifier) {
                     Card(
                         modifier = Modifier
                             .fillMaxWidth()
-                            .height(220.dp)
+                            .height(250.dp)
                     ) { }
                     HorizontalDivider(
                         modifier = Modifier
