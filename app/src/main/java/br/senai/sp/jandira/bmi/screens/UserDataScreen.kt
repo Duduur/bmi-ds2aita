@@ -235,7 +235,7 @@ fun UserDataScreen(modifier: Modifier = Modifier) {
 
                     )
                     OutlinedTextField(
-                        value =  heightState.value,
+                        value = heightState.value,
                         onValueChange = {it ->
                             heightState.value = it
                         },

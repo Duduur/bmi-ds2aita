@@ -10,4 +10,9 @@
     <string name="Weight">Weight</string>
     <string name="Height">Height</string>
     <string name="calculate">Calculate</string>
+    <string name="Result">Your BMI Result</string>
+    <string name="high">High</string>
+    <string name="Obesity">You have Class i Obesity</string>
+    <string name="new_calc">New Calc</string>
+
 </resources>
