@@ -21,7 +21,7 @@ class MainActivity : ComponentActivity() {
             ){
                composable(route = "home"){ HomeScreen(navegacao) }
                composable(route = "user_data"){ UserDataScreen(navegacao) }
-               composable(route = "bmi_result"){ BMIResultScreen() }
+               composable(route = "bmi_result"){ BMIResultScreen(navegacao) }
             }
         }
     }

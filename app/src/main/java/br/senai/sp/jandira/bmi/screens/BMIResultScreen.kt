@@ -18,7 +18,6 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Card
-import androidx.compose.material3.CardColors
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Text
@@ -34,10 +33,11 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.navigation.NavHostController
 import br.senai.sp.jandira.bmi.R
 
 @Composable
-fun BMIResultScreen(modifier: Modifier = Modifier) {
+fun BMIResultScreen(navegacao: NavHostController?) {
 
     val context = LocalContext.current
     val userFile = context.getSharedPreferences("userFile", Context.MODE_PRIVATE)
@@ -223,7 +223,9 @@ fun BMIResultScreen(modifier: Modifier = Modifier) {
                             .width(350.dp)
                     )
 
-                    Button(onClick = {},
+                    Button(onClick = {
+                        navegacao?.navigate("user_data")
+                    },
                         colors = ButtonDefaults.buttonColors(Color(0xFF8922FF)),
                         modifier = Modifier
                             .padding(top = 25.dp)
@@ -253,5 +255,5 @@ fun BMIResultScreen(modifier: Modifier = Modifier) {
 @Preview
 @Composable
 private fun BMIResultScreenPreview() {
-    BMIResultScreen()
+    BMIResultScreen(null)
 }

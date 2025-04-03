@@ -11,6 +11,14 @@
     <string name="Height">Altura</string>
     <string name="calculate">Calcular</string>
     <string name="Result">Resultado do seu IMC</string>
-    <string name="Obesity">You have Class i Obesity</string>
     <string name="new_calc">New Calc</string>
+
+/*-----------------------------------------------------------------------*/
+
+    <string name="under_weight">Você está abaixo do seu peso ideal!</string>
+    <string name="normal_weight">Você tem um peso corporal normal!</string>
+    <string name="over_weight">Você está levemente acima do peso!</string>
+    <string name="class1_weight">Cuidado, Você tem Obesidade Classe I</string>
+    <string name="class2_weight"> Cuidado, Você tem Obesidade Classe II</string>
+    <string name="class3_weight">Cuidado, Você tem Obesidade Classe III</string>
 </resources>

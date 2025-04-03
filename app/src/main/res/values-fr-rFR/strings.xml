@@ -11,8 +11,14 @@
     <string name="Height">Hauteur</string>
     <string name="calculate">Calculer</string>
     <string name="Result">Your BMI Result</string>
-
-    <string name="Obesity">You have Class i Obesity</string>
     <string name="new_calc">New Calc</string>
+
+    /*------------------------------------------------------------*/
+    <string name="under_weight">Vous êtes en dessous de votre poids idéal !</string>
+    <string name="normal_weight">Vous avez un poids corporel normal !</string>
+    <string name="over_weight">Vous êtes légèrement en surpoids !</string>
+    <string name="class1_weight">Vous avez une obésité de classe I</string>
+    <string name="class2_weight">Vous avez une obésité de classe II</string>
+    <string name="class3_weight">Vous avez une obésité de classe III</string>
 
 </resources>

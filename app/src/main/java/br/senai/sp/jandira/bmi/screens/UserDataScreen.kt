@@ -292,13 +292,8 @@ fun UserDataScreen(navegacao: NavHostController?) {
 
                         )
                     }
-
                 }
-
-
-
             }
-
         }
     }
 }

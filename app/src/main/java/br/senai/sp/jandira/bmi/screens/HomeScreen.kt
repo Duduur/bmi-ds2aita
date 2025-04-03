@@ -45,6 +45,8 @@ fun HomeScreen(navegacao: NavHostController?) {
     val nameState = remember {
         mutableStateOf("")
     }
+
+
     // abrir ou fechar um arquivo do tipo SharedPreferences
     val context = LocalContext.current
     val userFile = context.getSharedPreferences("userFile", Context.MODE_PRIVATE)
