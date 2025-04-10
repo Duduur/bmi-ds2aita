@@ -35,6 +35,9 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
 import br.senai.sp.jandira.bmi.R
+import br.senai.sp.jandira.bmi.calcs.bmiCalculate
+import br.senai.sp.jandira.bmi.utils.numberConvertToLocale
+import java.util.Locale
 
 @Composable
 fun BMIResultScreen(navegacao: NavHostController?) {
@@ -44,6 +47,14 @@ fun BMIResultScreen(navegacao: NavHostController?) {
     val userAge = userFile.getInt("user_age", 0)
     val userWeight = userFile.getFloat("user_weight", 0.0f)
     val userHeight = userFile.getFloat("user_height", 0.0f)
+
+    //OBETER OS DADOS DO IMC DO USUARIO
+
+    val result = bmiCalculate(
+        userWeight.toInt(),
+        userHeight.toDouble().div(100)
+    )
+
     Box(
         modifier = Modifier
             .fillMaxSize()
@@ -102,12 +113,7 @@ fun BMIResultScreen(navegacao: NavHostController?) {
                         shape = CircleShape,
                         border = BorderStroke(
                             width = 6.dp,
-                            brush = Brush.linearGradient(
-                                listOf(
-                                    Color(0xFF8922FF),
-                                    Color(0xFF960DD0)
-                                )
-                            )
+                            color = result.color
                         )
 
                     ) {
@@ -119,7 +125,7 @@ fun BMIResultScreen(navegacao: NavHostController?) {
                             horizontalAlignment = Alignment.CenterHorizontally
                         ) {
                             Text(
-                                text = "30,6",
+                                text = numberConvertToLocale(result.bmi.second),
                                 fontSize = 30.sp,
                                 fontWeight = FontWeight.SemiBold,
                                 color = Color.Black,
@@ -128,9 +134,7 @@ fun BMIResultScreen(navegacao: NavHostController?) {
 
                     }
                     Text(
-                        text = stringResource(
-                            R.string.Obesity
-                        ),
+                        text = result.bmi.first,
                         fontSize = 20.sp,
                         fontWeight =  FontWeight.SemiBold,
                         modifier = Modifier

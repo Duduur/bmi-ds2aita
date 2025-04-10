@@ -44,6 +44,7 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.text.input.KeyboardCapitalization
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.tooling.preview.Preview
@@ -209,6 +210,7 @@ fun UserDataScreen(navegacao: NavHostController?) {
                         },
                         keyboardOptions = KeyboardOptions(
                             keyboardType = KeyboardType.Number,
+                            imeAction = ImeAction.Next,
                             capitalization = KeyboardCapitalization.Words
                         )
 
@@ -239,6 +241,7 @@ fun UserDataScreen(navegacao: NavHostController?) {
                         },
                         keyboardOptions = KeyboardOptions(
                             keyboardType = KeyboardType.Number,
+                            imeAction = ImeAction.Next,
                             capitalization = KeyboardCapitalization.Words
                         )
 
@@ -269,6 +272,7 @@ fun UserDataScreen(navegacao: NavHostController?) {
                         },
                         keyboardOptions = KeyboardOptions(
                             keyboardType = KeyboardType.Number,
+                            imeAction = ImeAction.Done,
                             capitalization = KeyboardCapitalization.Words
                         )
 
