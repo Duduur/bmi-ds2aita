@@ -13,7 +13,7 @@
     <string name="Result">Resultado do seu IMC</string>
     <string name="new_calc">New Calc</string>
 
-/*-----------------------------------------------------------------------*/
+    /*-----------------------------------------------------------------------*/
 
     <string name="under_weight">Você está abaixo do seu peso ideal!</string>
     <string name="normal_weight">Você tem um peso corporal normal!</string>
@@ -21,4 +21,14 @@
     <string name="class1_weight">Cuidado, Você tem Obesidade Classe I</string>
     <string name="class2_weight"> Cuidado, Você tem Obesidade Classe II</string>
     <string name="class3_weight">Cuidado, Você tem Obesidade Classe III</string>
+
+    /*-----------------------------------------------------------------------*/
+
+    <string name="underweight">Abaixo do peso</string>
+    <string name="normal">Normal</string>
+    <string name="overweight">Sobrepeso</string>
+    <string name="obesity1">Obesidade Grau I</string>
+    <string name="obesity2">Obesidade Grau II</string>
+    <string name="obesity3">Obesidade Grau III</string>
+
 </resources>
